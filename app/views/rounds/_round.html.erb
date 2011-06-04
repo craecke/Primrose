@@ -1,0 +1,14 @@
+<h3><%= round.title %></h3>
+<table>
+  <thead>
+    <tr>
+      <th>First</th>
+      <th>Last</th>
+      <th>Country</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%= render :partial => "score_lists", :collection => round.score_lists %>
+  </tbody>
+</table>
