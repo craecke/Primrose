@@ -1,7 +1,7 @@
-<tr>
+<tr class="participant">
   <td><%= score_lists.performer.first_name %></td>
   <td><%= score_lists.performer.last_name %></td>
   <td><%= score_lists.performer.origin %></td>
   <%= render :partial => "scores", :collection => score_lists.scores, :locals => { :dropped => score_lists.dropped_scores } %>
-  <td><%= score_lists.average_final %></td>
+  <td class="avg"><%= score_lists.average_final %></td>
 </tr>
