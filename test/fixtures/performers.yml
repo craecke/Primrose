@@ -135,25 +135,25 @@ eri:
 adrien:
   id: 23
   first_name: Adrien
-  last_name:
+  last_name: La Marca
   origin: France
 
 vicki:
   id: 24
-  first_name:
-  last_name:
+  first_name: Vicki
+  last_name: Powell
   origin: USA
 
 jing:
   id: 25
-  first_name:
-  last_name:
+  first_name: Jing
+  last_name: Yang
   origin: China
 
 onyou:
   id: 26
-  first_name:
-  last_name:
+  first_name: On You
+  last_name: Kim
   origin: South Korea
 
 minkyung:
