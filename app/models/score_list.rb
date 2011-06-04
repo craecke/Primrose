@@ -21,6 +21,10 @@ class ScoreList < ActiveRecord::Base
     s
   end
 
+  def alternate_scores
+    scores.sort[1..-2]
+  end
+
   def average_all
     a = scores
     (a.inject { |sum,el| sum + el }.to_f / a.size).round(1)
@@ -28,6 +32,11 @@ class ScoreList < ActiveRecord::Base
 
   def average_final
     a = final_scores
+    (a.inject { |sum,el| sum + el }.to_f / a.size).round(1)
+  end
+
+  def average_alternate
+    a = alternate_scores
     (a.inject { |sum,el| sum + el }.to_f / a.size).round(1)
   end
 end
