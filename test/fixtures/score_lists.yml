@@ -204,175 +204,175 @@ q1p29:
   dropped_scores: 2 6
 
 q2p1:
-  round: 1
+  round_id: 2
   performer_id: 1
   scores: 6.8   5.6     5       4       4       4       6.5     4.8     5.5
   dropped_scores: 2 7
 
 q2p2:
-  round: 1
+  round_id: 2
   performer_id: 2
   scores: 7.3   8       7       7.3     7.5     6       7.5     5.9     6.9
   dropped_scores: 1 6
 
 q2p3:
-  round: 1
+  round_id: 2
   performer_id: 3
   scores: 8.2   6.6     7       6       7.5     6.5     7.8     6.8     6.6
   dropped_scores: 0 7
 
 q2p4:
-  round: 1
+  round_id: 2
   performer_id: 4
   scores: 7     6       5.8     6.8     6.5     5.5     4.8     6.2     6
   dropped_scores: 3 5
 
 q2p5:
-  round: 1
+  round_id: 2
   performer_id: 5
   scores: 7.5   6.7     6       5       7.3     5       7       6.3     6.3
   dropped_scores: 6 8
 
 q2p6:
-  round: 1
+  round_id: 2
   performer_id: 6
   scores: 8.3   6.6     5.5     7       7       6       6       5.6     6.9
   dropped_scores: 0 4
 
 q2p7:
-  round: 1
+  round_id: 2
   performer_id: 7
   scores: 7.8   6.7     6.8     6.1     6.5     7       7.8     7       8.5
   dropped_scores: 0 7
 
 q2p8:
-  round: 1
+  round_id: 2
   performer_id: 8
   scores: 7.5   7       6.7     7.8     5.5     5       8       5.9     5.9
   dropped_scores: 1 5
 
 q2p9:
-  round: 1
+  round_id: 2
   performer_id: 9
   scores: 9     8.9     8.9     8.8     9       6.5     10      7.2     6.6
   dropped_scores: 3 4
 
 q2p10:
-  round: 1
+  round_id: 2
   performer_id: 10
   scores: 6.8   6.7     8       9       8       5       8.9     5.9     6.5
   dropped_scores: 3 6
 
 q2p11:
-  round: 1
+  round_id: 2
   performer_id: 11
   scores: 7.1   5.7     6.5     5       6.5     6       7       5.1     6.3
   dropped_scores: 1 5
 
 q2p12:
-  round: 1
+  round_id: 2
   performer_id: 12
   scores: 6.7   5.3     4       5.5     4       4       5.5     5       5.4
   dropped_scores: 1 2
 
 q2p13:
-  round: 1
+  round_id: 2
   performer_id: 13
   scores: 6     4.8     3.5     5       4       3       5       4.3     4.9
   dropped_scores: 2 3
 
 q2p14:
-  round: 1
+  round_id: 2
   performer_id: 14
   scores: 7.8   5.6     6       8.2     4       7       6       5.9     6.5
   dropped_scores: 2 3
 
 q2p15:
-  round: 1
+  round_id: 2
   performer_id: 15
   scores: 7.3   7       9.3     5       8       6.5     5       7.4     6
   dropped_scores: 5 8
 
 q2p16:
-  round: 1
+  round_id: 2
   performer_id: 16
   scores: 6.6   6.8     6       7.6     7.8     6       5       6.4     7.5
   dropped_scores: 1 3
 
 q2p17:
-  round: 1
+  round_id: 2
   performer_id: 17
   scores: 7.8   5.9     6       6.2     6       5       7.2     6.4     8.7
   dropped_scores: 3 7
 
 q2p18:
-  round: 1
+  round_id: 2
   performer_id: 18
   scores: 6.8   7       8.5     4       7       8.5     7.5     6.9     6.2
   dropped_scores: 1 6
 
 q2p19:
-  round: 1
+  round_id: 2
   performer_id: 19
   scores: 7.9   7       8.5     8.9     7.8     7       7.5     6       6.2
   dropped_scores: 2 7
 
 q2p20:
-  round: 1
+  round_id: 2
   performer_id: 20
   scores: 7.3   7.1     6.9     7.8     5.5     6.5     7       6.4     6.2
   dropped_scores: 0 8
 
 q2p21:
-  round: 1
+  round_id: 2
   performer_id: 21
   scores: 8.8   7.5     8       8.2     6       6.5     6       7.9     6.4
   dropped_scores: 1 2
 
 q2p22:
-  round: 1
+  round_id: 2
   performer_id: 22
   scores: 6.8   5.9     6.9     8.4     5       5.5     6       5.3     6
   dropped_scores: 1 8
 
 q2p23:
-  round: 1
+  round_id: 2
   performer_id: 23
   scores: 8.9   6.8     8.5     6.1     5.5     7.5     8       6.8     8
   dropped_scores: 2 3
 
 q2p24:
-  round: 1
+  round_id: 2
   performer_id: 24
   scores: 7.5   6.9     8.5     9.2     4       8       8.9     6.8     7.5
   dropped_scores: 1 5
 
 q2p25:
-  round: 1
+  round_id: 2
   performer_id: 25
   scores: 6.8   6.8     8.1     8.3     7.5     6.5     6.5     5.8     5.7
   dropped_scores: 0 2
 
 q2p26:
-  round: 1
+  round_id: 2
   performer_id: 26
   scores: 7     6.6     5.9     6       5       5       6       5.7     6
   dropped_scores: 1 6
 
 q2p27:
-  round: 1
+  round_id: 2
   performer_id: 27
   scores: 6.6   5.4     4       5.8     4       4       6       4.8     5
   dropped_scores: 3 8
 
 q2p28:
-  round: 1
+  round_id: 2
   performer_id: 28
   scores: 7.3   6.5     4.8     5       7.5     5       7.5     6       7
   dropped_scores: 2 4
 
 q2p29:
-  round: 1
+  round_id: 2
   performer_id: 29
   scores: 7     6.9     5.5     7.6     6.5     5.5     6       5.8     6.2
   dropped_scores: 4 6

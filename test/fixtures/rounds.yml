@@ -1,13 +1,33 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-quarters:
+quarters1:
   id: 1
-  title: Quarter Finals
+  title: Quarter Finals, Day 1
 
-semis:
+quarters2:
   id: 2
-  title: Semi Finals
+  title: Quarter Finals, Day 2
+
+semis1:
+  id: 3
+  title: Semifinals, Box 1
+
+semis2:
+  id: 4
+  title: Semifinals, Box 2
+
+semis3:
+  id: 5
+  title: Semifinals, Box 2
+
+semis4:
+  id: 6
+  title: Semifinals, Box 2
+
+semis5:
+  id: 7
+  title: Semifinals, Box 5
 
 finals:
-  id: 3
+  id: 8
   title: Finals
