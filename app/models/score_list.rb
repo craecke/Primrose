@@ -5,12 +5,12 @@ class ScoreList < ActiveRecord::Base
   def scores
     s = read_attribute(:scores)
 
-    s.split(" ").collect { |s| s.to_f }
+    s.split(/ |,/).collect { |s| s.to_f }
   end
 
   def dropped_scores
     d = read_attribute(:dropped_scores)
-    d.split(" ").collect { |d| d.to_i }
+    d.split(/ |,/).collect { |d| d.to_i }
   end
 
   def final_scores
