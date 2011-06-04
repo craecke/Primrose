@@ -1,7 +1,36 @@
+<%= link_to "Originals", "/", :id => "original" %>
+<%= link_to "Highest/Lowest", "#", :id => "highlow" %>
+<%= link_to "Randomize", "#", :id => "randomize" %>
+
 <%= render :partial => "round", :collection => @rounds %>
 
 <script type="text/javascript">
   $(function() {
     $("table.sortable").tablesorter();
+
+    $("a#highlow").bind("click", function () {
+      $("tr").each(function(index) {
+        if ($(this)[0].id != "headrow") {
+          var vals = $(this).children().slice(3, 11).map(function() { return parseFloat(this.innerHTML); }).sort();
+          var drops = [ vals[0], vals[vals.length - 1] ];
+
+          $(this).children().each(function(c) {
+            $(this).removeClass("dropped");
+            if (drops.indexOf(parseFloat(this.innerHTML)) != -1) {
+              $(this).addClass("dropped");
+              var idx = drops.indexOf(parseFloat(this.innerHTML));
+              if (idx != -1)
+                drops.splice(idx, 1);
+            }
+          });
+        }
+      });
+
+      return false;
+    });
+
+    $("randomize").bind("click", function () {
+      return false;
+    });
   });
 </script>
