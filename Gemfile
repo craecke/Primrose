@@ -9,6 +9,7 @@ gem 'sqlite3'
 
 gem 'sass'
 gem 'compass'
+gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'

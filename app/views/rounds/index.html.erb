@@ -1,1 +1,7 @@
 <%= render :partial => "round", :collection => @rounds %>
+
+<script type="text/javascript">
+  $(function() {
+    $("table.sortable").tablesorter();
+  });
+</script>
