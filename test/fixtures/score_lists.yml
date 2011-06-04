@@ -1,178 +1,203 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-# This model initially had no columns defined.  If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
 q1p1:
+  id: 1
   round_id: 1
   performer_id: 1
   scores: 7     7       8.8     6.2     7       5       6.8     6.5     5
   dropped_scores: 2 7
 
 q1p2:
+  id: 2
   round_id: 1
   performer_id: 2
   scores: 6.5   7       9.2     5.2     5.7     5.5     9       5.5     6.3
   dropped_scores: 0 6
 
 q1p3:
+  id: 3
   round_id: 1
   performer_id: 3
   scores: 7.2   6.5     7.5     8.2     7       5       8.2     5.2     7.5
   dropped_scores: 4 8
 
 q1p4:
+  id: 4
   round_id: 1
   performer_id: 4
   scores: 6.3   6       5       5       7.5     4       4       4.8     6
   dropped_scores: 2 7
 
 q1p5:
+  id: 5
   round_id: 1
   performer_id: 5
   scores: 6.6   6.7     5.2     7       7.3     5       5       5       6
   dropped_scores: 5 6
 
 q1p6:
+  id: 6
   round_id: 1
   performer_id: 6
   scores: 5.4   4.8     4       4.8     4       5       4       4.9     5
   dropped_scores: 4 6
 
 q1p7:
+  id: 7
   round_id: 1
   performer_id: 7
   scores: 7.3   6.8     6       5.3     8.5     5       6       5.3     7.4
   dropped_scores: 7 8
 
 q1p8:
+  id: 8
   round_id: 1
   performer_id: 8
   scores: 6.3   7       7.5     5.8     9       6       7       5.2     5.9
   dropped_scores: 7 8
 
 q1p9:
+  id: 9
   round_id: 1
   performer_id: 9
   scores: 8.5   6.5     7       6.6     5       5.7     6       7       7
   dropped_scores: 0 1
 
 q1p10:
+  id: 10
   round_id: 1
   performer_id: 10
   scores: 6.4   6.8     7.3     6.9     7.5     5       6       5.2     7.5
   dropped_scores: 5 6
 
 q1p11:
+  id: 11
   round_id: 1
   performer_id: 11
   scores: 8.8   5.5     5.5     6.2     5       6       7       5       5.3
   dropped_scores:  0 2
 
 q1p12:
+  id: 12
   round_id: 1
   performer_id: 12
   scores: 5.5   5.3     8       7.5     4       5       8       6.3     5.2
   dropped_scores: 2 7
 
 q1p13:
+  id: 13
   round_id: 1
   performer_id: 13
   scores: 5.2   5.1     4.5     4.8     4.5     3       5       4.9     4.8
   dropped_scores: 4 8
 
 q1p14:
+  id: 14
   round_id: 1
   performer_id: 14
   scores: 6.7   5.3     5.3     4.6     5       7       5       5.1     6.2
   dropped_scores: 0 1
 
 q1p15:
+  id: 15
   round_id: 1
   performer_id: 15
   scores: 7.5   7       9.8     8       8       7       8.5     6       7
   dropped_scores: 0 6
 
 q1p16:
+  id: 16
   round_id: 1
   performer_id: 16
   scores: 6.4   6       8.9     7.2     9.5     7.2     7.5     6       8.5
   dropped_scores: 0 1
 
 q1p17:
+  id: 17
   round_id: 1
   performer_id: 17
   scores: 8.6   5.7     7.5     8.5     5.5     5       5       7.5     7.7
   dropped_scores: 3 8
 
 q1p18:
+  id: 18
   round_id: 1
   performer_id: 18
   scores: 8.3   8.5     9.8     6.8     9.8     7.5     9       7.2     7.4
   dropped_scores: 3 7
 
 q1p19:
+  id: 19
   round_id: 1
   performer_id: 19
   scores: 5.8   6.9     5       9       8       6       6.5     6       6.2
   dropped_scores: 0 5
 
 q1p20:
+  id: 20
   round_id: 1
   performer_id: 20
   scores: 7     6.5     5.5     8.9     7.5     7       7.9     6.7     6.9
   dropped_scores: 4 6
 
 q1p21:
+  id: 21
   round_id: 1
   performer_id: 21
   scores: 7.5   7.3     5.8     7.1     9       7.1     5       9       6.5
   dropped_scores: 0 4
 
 q1p22:
+  id: 22
   round_id: 1
   performer_id: 22
   scores: 6.7   6       5.5     5.8     5       5.5     5       5       6.2
   dropped_scores: 3 6
 
 q1p23:
+  id: 23
   round_id: 1
   performer_id: 23
   scores: 9.4   6       9       9.2     5       9       8.8     5.2     8
   dropped_scores: 1 5
 
 q1p24:
+  id: 24
   round_id: 1
   performer_id: 24
   scores: 8     6       8.9     7.8     4.5     7.8     6       7.3     6.5
   dropped_scores: 5 7
 
 q1p25:
+  id: 25
   round_id: 1
   performer_id: 25
   scores: 8.3   6.2     6.5     6.2     6       6       5       5.9     4.8
   dropped_scores: 2 5
 
 q1p26:
+  id: 26
   round_id: 1
   performer_id: 26
   scores: 7.5   7       6.7     7.2     5.6     5.5     7.5     5.8     6
   dropped_scores: 4 6
 
 q1p27:
+  id: 27
   round_id: 1
   performer_id: 27
   scores: 7     5       5       6.4     4.5     4       5.5     5.8     5.5
   dropped_scores: 2 3
 
 q1p28:
+  id: 28
   round_id: 1
   performer_id: 28
   scores: 7.7   6.9     4.8     5       7       6       8       6       7.5
   dropped_scores: 6 7
 
 q1p29:
+  id: 29
   round_id: 1
   performer_id: 29
   scores: 7     7       6.5     5.5     6       6.5     6       5.9     7.6
