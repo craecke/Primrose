@@ -1,11 +1,175 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-# This model initially had no columns defined.  If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+ksenia:
+  id: 1
+  first_name: Ksenia
+  last_name: Zhuleva
+  origin: Russia
+
+wenting:
+  id: 2
+  first_name: Wenting
+  last_name: Kang
+  origin: China
+
+hyobi:
+  id: 3
+  first_name: Hyobi
+  last_name: Sim
+  origin: South Korea
+
+ruiqing:
+  id: 4
+  first_name: Ruiqing
+  last_name: Tang
+  origin: China
+
+yi:
+  id: 5
+  first_name: Yi Fei
+  last_name: Zhou
+  origin: China
+
+bogdan:
+  id: 6
+  first_name: Bogdan
+  last_name: Banu
+  origin: Romania
+
+yifei:
+  id: 7
+  first_name: Yi Fei
+  last_name: Deng
+  origin: China
+
+lauriane:
+  id: 8
+  first_name: Lauriane
+  last_name: David
+  origin: France
+
+dakyung:
+  id: 9
+  first_name: Da Kyung
+  last_name: Kwak
+  origin: South Korea
+
+kimi:
+  id: 10
+  first_name: Kimi
+  last_name: Makino
+  origin: Japan
+
+danielp:
+  id: 11
+  first_name: Daniel
+  last_name: Palmizio
+  origin: Italy
+
+amanda:
+  id: 12
+  first_name: Amanda
+  last_name: Verner
+  origin: New Zealand
+
+minjung:
+  id: 13
+  first_name: Minjung
+  last_name: Chun
+  origin: South Korea
+
+danielg:
+  id: 14
+  first_name: Daniel
+  last_name: Getz
+  origin: USA
+
+elias:
+  id: 15
+  first_name: Elias
+  last_name: Goldstein
+  origin: USA/Norway
+
+danielh:
+  id: 16
+  first_name: Daniel Hanul
+  last_name: Lee
+  origin: Canada
+
+sanghyun:
+  id: 17
+  first_name: Sang Hyun
+  last_name: Yong
+  origin: South Korea
+
+matthew:
+  id: 18
+  first_name: Matthew
+  last_name: Lipman
+  origin: USA
+
+wolfram:
+  id: 19
+  first_name: Wolfram
+  last_name: Hauser
+  origin: Germany
+
+cong:
+  id: 20
+  first_name: Cong
+  last_name: Wu
+  origin: China
+
+ayane:
+  id: 21
+  first_name: Ayane
+  last_name: Kozasa
+  origin: USA
+
+eri:
+  id: 22
+  first_name: Eri
+  last_name: Sugita
+  origin: Japan
+
+adrien:
+  id: 23
+  first_name: Adrien
+  last_name: La Marca
+  origin: France
+
+vicki:
+  id: 24
+  first_name: Vicki
+  last_name: Powell
+  origin: USA
+
+jing:
+  id: 25
+  first_name: Jing
+  last_name: Yang
+  origin: China
+
+onyou:
+  id: 26
+  first_name: On You
+  last_name: Kim
+  origin: South Korea
+
+minkyung:
+  id: 27
+  first_name: Min-Kyung
+  last_name: Sung
+  origin: South Korea
+
+keju:
+  id: 28
+  first_name: Keju
+  last_name: Wang
+  origin: China
+
+rachel:
+  id: 29
+  first_name: Rachel
+  last_name: Ku
+  origin: Taiwan

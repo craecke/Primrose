@@ -1,0 +1,40 @@
+body {
+  color: #4f6b72;
+  font: normal 14px auto Helvetica;
+}
+
+a {
+  color: #c75f3e;
+}
+
+table {
+  padding: 0;
+  margin: 0;
+  width: 900px;
+}
+
+tr:nth-child(even) { background: #eee8d5 }
+tr:nth-child(odd)  { background: #fdf6e3 }
+
+th {
+  font: bold 11px Helvetica;
+  color: #4f6b72;
+}
+
+td {
+  padding: 6px 6px 6px 12px;
+  color: #4f6b72;
+}
+
+thead {
+  tr {
+    th {
+      background: #586e75;
+      color: #93a1a1;
+    }
+  }
+}
+
+td.dropped {
+  color: #dc322f;
+}
