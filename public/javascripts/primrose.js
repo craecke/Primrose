@@ -1,13 +1,44 @@
+function round2(f) {
+  return Math.round(f * 100) / 100;
+}
+
+function recalcQuarterCumulative() {
+  var performers = [];
+
+  $("tbody.quarter").each(function(day) {
+    $(this).children().each(function(index) {
+      var i = parseInt($(this).children("td:first-child")[0].innerHTML);
+      var avg = parseFloat($(this).children("td.avg")[0].innerHTML);
+
+      if (!performers[index])
+        performers[index] = [];
+
+      performers[index][day] = avg;
+    });
+  });
+
+  $("tbody.quartercumulative").children().each(function(p) {
+    var sortedIndex = parseInt($(this).children("td:first-child")[0].innerHTML) - 1;
+    $(this).children("td.day1")[0].innerHTML = performers[sortedIndex][0];
+    $(this).children("td.day2")[0].innerHTML = performers[sortedIndex][1];
+    $(this).children("td.final")[0].innerHTML = round2((performers[sortedIndex][0] + performers[sortedIndex][1]) / 2);
+  });
+
+  $("table#quarterCumulativeTable").tablesorter();
+}
+
 function recalcAverages() {
   $("tr.participant").each(function() {
     var vals = $(this).children("td.score").filter(function(index) { return !$(this).hasClass("dropped"); });
 
     var sum = 0;
     $.each(vals, function() { sum += parseFloat(this.innerHTML); });
-    var avg = Math.round(sum / vals.length * 10) / 10;
+      var avg = round2(sum / vals.length);
 
     $(this).children("td.avg")[0].innerHTML = avg;
   });
+
+  recalcQuarterCumulative();
 }
 
 function updateSorting() {
@@ -49,6 +80,7 @@ $(function() {
 
     recalcAverages();
     updateSorting();
+    recalcQuarterCumulative();
 
     return false;
   });
@@ -71,7 +103,11 @@ $(function() {
 
     recalcAverages();
     updateSorting();
+    recalcQuarterCumulative();
 
     return false;
   });
+
+  recalcQuarterCumulative();
+  $("table#quarterCumulativeTable").tablesorter();
 });
