@@ -1,3 +1,12 @@
+<h1>Primrose Competition, 2011 Results</h1>
+
+<p>
+  Scores in red are being dropped from the averages.  In the competition, two random scores (out of nine)
+  were dropped.  To view the results had the highest and lowest scores been dropped, click the Highest/Lowest
+  link below.  To re-randomize the dropped scores, click Randomize below.  To reset the entire page, click
+  Originals.
+</p>
+
 <%= link_to "Originals", "/", :id => "original" %>
 <%= link_to "Highest/Lowest", "#", :id => "highlow" %>
 <%= link_to "Randomize", "#", :id => "randomize" %>
@@ -17,6 +26,24 @@
     });
   }
 
+  function updateSorting() {
+    var th = $("th.headerSortUp");
+    if (th.length > 0) {
+      var parent = th.parent();
+      var table = parent.parent().parent();
+      var index = parent.children().index(parent.children("th.headerSortUp"));
+      table.tablesorter({ sortList: [[ index, 0 ]] });
+    }
+
+    th = $("th.headerSortDown");
+    if (th.length > 0) {
+      var parent = th.parent();
+      var table = parent.parent().parent();
+      var index = parent.children().index(parent.children("th.headerSortDown"));
+      table.tablesorter({ sortList: [[ index, 1 ]] });
+    }
+  }
+
   $(function() {
     $("table.sortable").tablesorter();
 
@@ -25,7 +52,7 @@
         var vals = $(this).children("td.score").map(function() { return parseFloat(this.innerHTML); }).sort();
         var drops = [ vals[0], vals[vals.length - 1] ];
 
-        $(this).children().each(function(c) {
+        $(this).children("td.score").each(function(c) {
           $(this).removeClass("dropped");
           if (drops.indexOf(parseFloat(this.innerHTML)) != -1) {
             $(this).addClass("dropped");
@@ -37,11 +64,30 @@
       });
 
       recalcAverages();
+      updateSorting();
 
       return false;
     });
 
-    $("randomize").bind("click", function () {
+    $("#randomize").bind("click", function () {
+      $("tr.participant").each(function(index) {
+        var drops = [ 0, 0 ];
+        do {
+          drops = [ Math.floor(Math.random() * 9), Math.floor(Math.random() * 9) ];
+        } while(drops[0] == drops[1]);
+
+        $(this).children("td.score").each(function() {
+          $(this).removeClass("dropped");
+        });
+
+        for (var n = 0; n < 2; n++) {
+          $(this).children(":nth-child(" + (parseInt(drops[n])+5) + ")").addClass("dropped");
+        }
+      });
+
+      recalcAverages();
+      updateSorting();
+
       return false;
     });
   });
