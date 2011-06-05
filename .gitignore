@@ -4,5 +4,4 @@ log/*.log
 tmp/
 doc/
 *~
-Gemfile.lock
 public/stylesheets/*.css
