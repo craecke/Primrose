@@ -54,18 +54,6 @@ caption {
 tr:nth-child(even) { background: #eee8d5 }
 tr:nth-child(odd)  { background: #fdf6e3 }
 
-tr.headrow1 {
-  th {
-    &:first-child {
-      @include border-top-left-radius(4px);
-    }
-
-    &:last-child {
-      @include border-top-right-radius(4px);
-    }
-  }
-}
-
 tr:last-child {
   td:first-child {
     @include border-bottom-left-radius(4px);
@@ -84,6 +72,12 @@ th {
   background-color: #586e75;
   padding: 6px 6px 6px 12px;
   text-align: left;
+  &:first-child {
+    @include border-top-left-radius(4px);
+  }
+  &:last-child {
+    @include border-top-right-radius(4px);
+  }
 
   &.headerSortDown {
     th span {
@@ -114,6 +108,9 @@ th {
 
 td, th {
   padding: .5em .5em .5em 1em;
+}
+
+td {
   color: #4f6b72;
 }
 
