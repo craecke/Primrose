@@ -64,18 +64,16 @@
       $("tr.participant").each(function(index) {
         var drops = [ 0, 0 ];
         do {
-          drops = [ Math.floor(Math.random() * 10), Math.floor(Math.random() * 10) ];
+          drops = [ Math.floor(Math.random() * 9), Math.floor(Math.random() * 9) ];
         } while(drops[0] == drops[1]);
 
         $(this).children("td.score").each(function() {
           $(this).removeClass("dropped");
-          if (drops.indexOf(parseFloat(this.innerHTML)) != -1) {
-            $(this).addClass("dropped");
-            var idx = drops.indexOf(parseFloat(this.innerHTML));
-            if (idx != -1)
-              drops.splice(idx, 1);
-          }
         });
+
+        for (var n = 0; n < 2; n++) {
+          $(this).children(":nth-child(" + (parseInt(drops[n])+5) + ")").addClass("dropped");
+        }
       });
 
       recalcAverages();
