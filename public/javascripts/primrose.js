@@ -105,4 +105,5 @@ $(function() {
   });
 
   recalcQuarterCumulative();
+  $("table#quarterCumulativeTable").tablesorter();
 });
