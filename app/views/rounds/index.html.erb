@@ -32,6 +32,25 @@
   <li><%= link_to "Randomize", "#", :id => "randomize" %></li>
 </ul>
 
+
+<table class="sortable" border="0" cellspacing="0" cellpadding="0">
+  <caption>Quarter Finals, Cumulative Averages</caption>
+  <thead>
+    <th>#<span></span></th>
+    <th>First<span></span></th>
+    <th>Last<span></span></th>
+    <th>Country<span></span></th>
+    <th class="day1">Day 1<span></span></th>
+    <th class="day2">Day 2<span></span></th>
+    <th class="final">Final<span></span></th>
+  </thead>
+
+  <tbody class="quartercumulative">
+    <%= render :partial => "quarter_score_lists", :collection => Performer.all %>
+  </tbody>
+</table>
+
+
 <%= render :partial => "round", :collection => @rounds %>
 
 <p class="disclaimer">
