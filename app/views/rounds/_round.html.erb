@@ -2,24 +2,24 @@
   <caption><%= round.title %></caption>
   <thead>
     <tr class="headrow">
-      <th>#<span class="tri"></span></th>
-      <th>First<span class="tri"></span></th>
-      <th>Last<span class="tri"></span></th>
-      <th>Country<span class="tri"></span></th>
-      <th><span class="tri"></span></th>
-      <th><span class="tri"></span></th>
-      <th><span class="tri"></span></th>
-      <th><span class="tri"></span></th>
-      <th><span class="tri"></span></th>
-      <th><span class="tri"></span></th>
-      <th><span class="tri"></span></th>
-      <th><span class="tri"></span></th>
-      <th><span class="tri"></span></th>
-      <th class="avg">Avg<span class="tri"></span></th>
+      <th>#<span></span></th>
+      <th>First<span></span></th>
+      <th>Last<span></span></th>
+      <th>Country<span></span></th>
+      <th><span></span></th>
+      <th><span></span></th>
+      <th><span></span></th>
+      <th><span></span></th>
+      <th><span></span></th>
+      <th><span></span></th>
+      <th><span></span></th>
+      <th><span></span></th>
+      <th><span></span></th>
+      <th class="avg">Avg<span></span></th>
     </tr>
   </thead>
 
-  <tbody class="<%= round.grouping %>">
+  <tbody>
     <%= render :partial => "score_lists", :collection => round.score_lists %>
   </tbody>
 </table>

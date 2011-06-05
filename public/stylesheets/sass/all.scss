@@ -86,7 +86,7 @@ th {
   text-align: left;
 
   &.headerSortDown {
-    span.tri {
+    th span {
       position: relative;
       top: 10px;
       margin-left: 2px;
@@ -99,7 +99,7 @@ th {
   }
 
   &.headerSortUp {
-    span.tri {
+    th span {
       top: -10px;
       position: relative;
       margin-left: 2px;
