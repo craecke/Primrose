@@ -22,12 +22,12 @@ semis2:
 
 semis3:
   id: 5
-  title: Semifinals, Box 2
+  title: Semifinals, Box 3
   grouping: semi
 
 semis4:
   id: 6
-  title: Semifinals, Box 2
+  title: Semifinals, Box 4
   grouping: semi
 
 semis5:
