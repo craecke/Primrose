@@ -23,6 +23,8 @@ function recalcQuarterCumulative() {
     $(this).children("td.day2")[0].innerHTML = performers[sortedIndex][1];
     $(this).children("td.final")[0].innerHTML = round2((performers[sortedIndex][0] + performers[sortedIndex][1]) / 2);
   });
+
+  $("table#quarterCumulativeTable").tablesorter();
 }
 
 function recalcAverages() {
@@ -35,6 +37,8 @@ function recalcAverages() {
 
     $(this).children("td.avg")[0].innerHTML = avg;
   });
+
+  recalcQuarterCumulative();
 }
 
 function updateSorting() {
