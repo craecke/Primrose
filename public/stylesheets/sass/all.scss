@@ -2,35 +2,57 @@
 
 body {
   color: #4f6b72;
-  font: normal 14px auto Helvetica;
+  font: normal 14px/1.29 Helvetica, sans-serif;
+  padding-bottom: (36em/14);
+}
+
+#content {
+  width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.29em;
+  margin: 1.29em 0 0;
+}
+
+p {
+  margin: 1.29em 0;
+  text-align: justify;
 }
 
 a {
   color: #c75f3e;
 }
 
+ul {
+  list-style: none;
+  padding: .65em 0;
+}
+
+ul li {
+  float: left;
+  padding-right: 2em;
+}
+
 table {
+  clear: both;
   padding: 0;
   margin: 0;
-  width: 900px;
+  width: 100%;
   border: 1px solid #586e75;
   @include border-radius(4px);
 }
 
+caption {
+   font-size: 1.5em;
+   line-height: 1.67em;
+   margin: 1.67em 0 0;
+}
+
 tr:nth-child(even) { background: #eee8d5 }
 tr:nth-child(odd)  { background: #fdf6e3 }
-
-tr.headrow1 {
-  th {
-    &:first-child {
-      @include border-top-left-radius(4px);
-    }
-
-    &:last-child {
-      @include border-top-right-radius(4px);
-    }
-  }
-}
 
 tr:last-child {
   td:first-child {
@@ -43,15 +65,22 @@ tr:last-child {
 }
 
 th {
+  text-align: left;
   @include linear-gradient(color-stops(#586e75, darken(#586e75, 10%)));
   font: bold 11px Helvetica;
   color: #93a1a1;
   background-color: #586e75;
   padding: 6px 6px 6px 12px;
   text-align: left;
+  &:first-child {
+    @include border-top-left-radius(4px);
+  }
+  &:last-child {
+    @include border-top-right-radius(4px);
+  }
 
   &.headerSortDown {
-    span.tri {
+    th span {
       position: relative;
       top: 10px;
       margin-left: 2px;
@@ -64,7 +93,7 @@ th {
   }
 
   &.headerSortUp {
-    span.tri {
+    th span {
       top: -10px;
       position: relative;
       margin-left: 2px;
@@ -77,9 +106,24 @@ th {
   }
 }
 
+td, th {
+  padding: .5em .5em .5em 1em;
+}
+
 td {
-  padding: 6px 6px 6px 12px;
   color: #4f6b72;
+}
+
+td:first-child {
+  border-right: 1px solid #93a1a1;
+}
+
+td.firstScore, td.avg {
+  border-left: 1px solid #93a1a1;
+}
+
+td.avg {
+  font-weight: bold;
 }
 
 td.dropped {

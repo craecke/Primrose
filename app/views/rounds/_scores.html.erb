@@ -1,7 +1,7 @@
-<% if dropped.include? scores_counter %>
-  <td class="score dropped">
-<% else %>
-  <td class="score">
-<% end %>
+<%- c = 'score' -%>
+<%- c += ' dropped' if dropped.include? scores_counter -%>
+<%- c += ' firstScore' if scores_counter == 0 %>
+
+<td class="<%= c %>">
   <%= scores %>
 </td>
