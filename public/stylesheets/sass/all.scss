@@ -80,7 +80,7 @@ th {
   }
 
   &.headerSortDown {
-    th span {
+    span {
       position: relative;
       top: 10px;
       margin-left: 2px;
@@ -93,7 +93,7 @@ th {
   }
 
   &.headerSortUp {
-    th span {
+    span {
       top: -10px;
       position: relative;
       margin-left: 2px;
