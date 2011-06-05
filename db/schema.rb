@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110603153211) do
+ActiveRecord::Schema.define(:version => 20110605014306) do
 
   create_table "performers", :force => true do |t|
     t.string   "first_name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(:version => 20110603153211) do
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "grouping"
   end
 
   create_table "score_lists", :force => true do |t|

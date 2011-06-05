@@ -3,30 +3,37 @@
 quarters1:
   id: 1
   title: Quarter Finals, Day 1
+  grouping: quarter
 
 quarters2:
   id: 2
   title: Quarter Finals, Day 2
+  grouping: quarter
 
 semis1:
   id: 3
   title: Semifinals, Box 1
+  grouping: semi
 
 semis2:
   id: 4
   title: Semifinals, Box 2
+  grouping: semi
 
 semis3:
   id: 5
   title: Semifinals, Box 2
+  grouping: semi
 
 semis4:
   id: 6
   title: Semifinals, Box 2
+  grouping: semi
 
 semis5:
   id: 7
   title: Semifinals, Box 5
+  grouping: semi
 
 finals:
   id: 8
