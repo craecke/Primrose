@@ -122,6 +122,10 @@ td.firstScore, td.avg {
   border-left: 1px solid #93a1a1;
 }
 
+td.avg {
+  font-weight: bold;
+}
+
 td.dropped {
   color: #dc322f;
 }
