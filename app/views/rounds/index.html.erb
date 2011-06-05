@@ -1,17 +1,26 @@
+<div id="content">
+
 <h1>Primrose Competition, 2011 Results</h1>
 
 <p>
-  Scores in red are being dropped from the averages.  In the competition, two random scores (out of nine)
-  were dropped.  To view the results had the highest and lowest scores been dropped, click the Highest/Lowest
-  link below.  To re-randomize the dropped scores, click Randomize below.  To reset the entire page, click
-  Originals.
+  Scores in red are being dropped from the averages. In the
+  com&shy;pe&shy;ti&shy;tion, two ran&shy;dom scores (out of nine)
+  were dropped. To view the re&shy;sults had the high&shy;est and low&shy;est
+  scores been dropped, click the &ldquo;Highest/Lowest&rdquo;
+  link below. To re-randomize the dropped scores, click
+  &ldquo;Random&shy;ize&rdquo; below. To re&shy;set the en&shy;tire page,
+  click &ldquo;Originals.&rdquo;
 </p>
 
-<%= link_to "Originals", "/", :id => "original" %>
-<%= link_to "Highest/Lowest", "#", :id => "highlow" %>
-<%= link_to "Randomize", "#", :id => "randomize" %>
+<ul>
+  <li><%= link_to "Originals", "/", :id => "original" %></li>
+  <li><%= link_to "Highest/Lowest", "#", :id => "highlow" %></li>
+  <li><%= link_to "Randomize", "#", :id => "randomize" %></li>
+</ul>
 
 <%= render :partial => "round", :collection => @rounds %>
+
+</div>
 
 <script type="text/javascript">
   function recalcAverages() {
