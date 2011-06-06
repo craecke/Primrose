@@ -18,5 +18,8 @@ class AddFinalRoundWithScores < ActiveRecord::Migration
   end
 
   def self.down
+    r = Round.find_by_title 'Finals'
+    r.score_lists.each { |x| x.destroy }
+    r.destroy
   end
 end
