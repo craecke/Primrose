@@ -1,3 +1,5 @@
+<%- score_count = round.score_lists.first.scores.length -%>
+
 <table class="sortable" border="0" cellspacing="0" cellpadding="0">
   <caption><%= round.title %></caption>
   <thead>
@@ -6,15 +8,9 @@
       <th>First<span></span></th>
       <th>Last<span></span></th>
       <th>Country<span></span></th>
+      <%- score_count.times do -%>
       <th><span></span></th>
-      <th><span></span></th>
-      <th><span></span></th>
-      <th><span></span></th>
-      <th><span></span></th>
-      <th><span></span></th>
-      <th><span></span></th>
-      <th><span></span></th>
-      <th><span></span></th>
+      <%- end -%>
       <th class="avg">Avg<span></span></th>
     </tr>
   </thead>

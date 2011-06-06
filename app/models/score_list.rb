@@ -10,14 +10,16 @@ class ScoreList < ActiveRecord::Base
 
   def dropped_scores
     d = read_attribute(:dropped_scores)
+    return nil if d.nil?
     d.split(" ").collect { |d| d.to_i }
   end
 
   def final_scores
     s = scores.clone
-    d = dropped_scores.sort.reverse
-
-    d.each { |i| s.delete_at(i) }
+    unless dropped_scores.nil?
+      d = dropped_scores.sort.reverse
+      d.each { |i| s.delete_at(i) }
+    end
     s
   end
 
