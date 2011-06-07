@@ -19,9 +19,9 @@ function recalcQuarterCumulative() {
 
   $("tbody.quartercumulative").children().each(function(p) {
     var sortedIndex = parseInt($(this).children("td:first-child")[0].innerHTML) - 1;
-    $(this).children("td.day1")[0].innerHTML = performers[sortedIndex][0];
-    $(this).children("td.day2")[0].innerHTML = performers[sortedIndex][1];
-    $(this).children("td.final")[0].innerHTML = round2((performers[sortedIndex][0] + performers[sortedIndex][1]) / 2);
+    $(this).children("td.day1")[0].innerHTML = performers[sortedIndex][0].toFixed(2);
+    $(this).children("td.day2")[0].innerHTML = performers[sortedIndex][1].toFixed(2);
+    $(this).children("td.final")[0].innerHTML = round2((performers[sortedIndex][0] + performers[sortedIndex][1]) / 2).toFixed(2);
   });
 
   $("table#quarterCumulativeTable").tablesorter();
@@ -35,7 +35,7 @@ function recalcAverages() {
     $.each(vals, function() { sum += parseFloat(this.innerHTML); });
       var avg = round2(sum / vals.length);
 
-    $(this).children("td.avg")[0].innerHTML = avg;
+      $(this).children("td.avg")[0].innerHTML = avg.toFixed(2);
   });
 
   recalcQuarterCumulative();
