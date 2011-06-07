@@ -59,12 +59,16 @@ function updateSorting() {
   }
 }
 
+function compare(a, b) {
+  return a - b;
+}
+
 $(function() {
   $("table.sortable").tablesorter();
 
   $("a#highlow").bind("click", function () {
     $("tr.participant").each(function(index) {
-      var vals = $(this).children("td.score").map(function() { return parseFloat(this.innerHTML); }).sort();
+      var vals = $(this).children("td.score").map(function() { return parseFloat(this.innerHTML); }).sort(compare);
       var drops = [ vals[0], vals[vals.length - 1] ];
 
       $(this).children("td.score").each(function(c) {
